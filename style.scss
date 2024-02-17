@@ -384,7 +384,7 @@ header {
   .sightseeing-container {
     display: grid;
     grid-template-columns: repeat(5);
-    gap: 0px;
+    gap: 5px;
     grid-auto-rows: 300px;
     .sightseeing-div-1 {
       grid-column: span 3;

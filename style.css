@@ -324,7 +324,7 @@ header .navigation ul .li-name a.active {
 .sightseeing-section .sightseeing-container {
   display: grid;
   grid-template-columns: repeat(5);
-  gap: 0px;
+  gap: 5px;
   grid-auto-rows: 300px;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-1 {
