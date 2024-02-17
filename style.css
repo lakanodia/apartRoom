@@ -699,6 +699,13 @@ header .navigation ul .li-name a.active {
   .contact-section .contact-form-main-div .conact-text-div {
     text-align: center;
   }
+  .contact-section .contact-form-main-div .conact-text-div .social-icon-main-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-section .contact-form-main-div .airbnb-embed-frame {
+    transform: scale(0.9);
+  }
 }
 @media (max-width: 750px) {
   .contact-section .contact-form-main-div {
@@ -721,6 +728,9 @@ header .navigation ul .li-name a.active {
   .contact-section .contact-form-main-div .conact-text-div {
     text-align: center;
     transform: scale(0.9);
+  }
+  .contact-section .contact-form-main-div .airbnb-embed-frame {
+    transform: scale(0.8);
   }
 }
 
@@ -811,7 +821,7 @@ header .navigation ul .li-name a.active {
     margin-top: 50px;
   }
   .footer-section .footer-div .footer-img-div {
-    display: none;
+    transform: scale(0.7);
   }
 }
 @media (max-width: 580px) {
@@ -828,12 +838,10 @@ header .navigation ul .li-name a.active {
     font-size: 12px;
   }
   .footer-section .footer-div .footer-text-div .social-icon-main-div {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
   }
   .footer-section .footer-div .footer-text-div .social-icon-main-div a {
     margin-top: 5px;
-  }
-  .footer-section .footer-div .footer-img-div {
-    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

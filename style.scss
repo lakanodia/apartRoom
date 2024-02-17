@@ -779,6 +779,13 @@ header {
       }
       .conact-text-div {
         text-align: center;
+        .social-icon-main-div{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .airbnb-embed-frame{
+        transform: scale(0.9);
       }
     }
   }
@@ -803,6 +810,9 @@ header {
       .conact-text-div {
         text-align: center;
         transform: scale(0.9);
+      }
+      .airbnb-embed-frame{
+        transform: scale(0.8);
       }
     }
   }
@@ -890,7 +900,7 @@ header {
         margin-top: $size-small;
       }
       .footer-img-div {
-        display: none;
+        transform: scale(0.7);
       }
     }
   }
@@ -908,14 +918,15 @@ header {
 
         }
         .social-icon-main-div{
-          flex-direction: column;
+          display: flex;
+          justify-content: space-between;
+          
           a{
             margin-top: 5px;
           }
         }
       }
       .footer-img-div {
-        display: none;
       }
     }
   }
