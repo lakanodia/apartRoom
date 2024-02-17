@@ -86,6 +86,11 @@ header .navigation ul .li-name a.active {
     font-size: 15px;
   }
 }
+@media (max-width: 1150px) {
+  header .navigation {
+    margin-left: 20px;
+  }
+}
 
 .backround-section {
   margin-top: 50px;
@@ -520,6 +525,32 @@ header .navigation ul .li-name a.active {
   width: 80px;
   height: 80px;
 }
+.feedback-section .feedback .avatar-image {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+.feedback-section .feedback .avatar-texts .text-city {
+  color: #434343;
+}
+.feedback-section .feedback .avatar-texts .feedback-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  color: #000000;
+}
+.feedback-section .feedback .avatar-texts .feedback-stars .stars {
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.feedback-section .feedback .avatar-texts .feedback-stars .text-time {
+  font-size: 12px;
+  font-weight: bold;
+}
 @media (max-width: 820px) {
   .feedback-section .feedback {
     transform: scale(0.8);
@@ -530,12 +561,7 @@ header .navigation ul .li-name a.active {
 }
 @media (max-width: 560px) {
   .feedback-section .feedback {
-    transform: scale(0.78);
-    height: 400px;
-  }
-  .feedback-section .feedback .icon-user {
-    width: 45px;
-    height: 45px;
+    height: 500px;
   }
 }
 @media (max-width: 630px) {
@@ -548,7 +574,7 @@ header .navigation ul .li-name a.active {
 }
 @media (max-width: 400px) {
   .feedback-section .feedback {
-    height: 370px;
+    height: 500px;
     transform: scale(0.7);
   }
   .feedback-section .feedback .icon-user {

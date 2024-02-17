@@ -60,7 +60,10 @@
                 <a class="nav-link" href="#section1">Home</a>
               </li>
               <li class="li-name">
-                <a class="nav-link" href="#section2">Services</a>
+                <a class="nav-link" href="#section2">Appliances</a>
+              </li>
+              <li class="li-name">
+                <a class="nav-link" href="#section5">Room Details</a>
               </li>
               <li class="li-name">
                 <a class="nav-link" href="#section3">Eat & Drink</a>
@@ -68,9 +71,7 @@
               <li class="li-name">
                 <a class="nav-link" href="#section4">Tours & Sightseeing</a>
               </li>
-              <li class="li-name">
-                <a class="nav-link" href="#section5">Room Details</a>
-              </li>
+
               <li class="li-name">
                 <a class="nav-link" href="#section6">Feedback</a>
               </li>
@@ -86,9 +87,9 @@
     <section class="backround-section" id="section1">
       <div class="backround-div">
         <div class="backround-text">
-          <h2 class="title">Hotel</h2>
+          <h1 class="title"> Room 2010</h2>
           <p class="decsription">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Relax in cozy aparthotel in Batumi, high up on the 21st floor with beautiful views of the boulevard and sea.
           </p>
           <a href="#section2">
             <i class="fa-solid fa-chevron-down icon-arrow"></i
@@ -98,7 +99,7 @@
     </section>
 
     <section class="services-section" id="section2">
-      <h2 class="services-title">Our Services</h2>
+      <h2 class="services-title">Appliances</h2>
       <div class="services-container">
         <div class="services-div">
           <i class="fa-solid fa-kitchen-set service-icon"></i>
@@ -151,6 +152,62 @@
         </div>
       </div>
     </section>
+
+    <section class="room-section" id="section5">
+      <h2 class="room-title">ROOM Details</h2>
+      <div class="room-main-div">
+        <div class="room-flex-div">
+          <div class="room-div">
+            <img class="img-block" src="./img/room-1.webp" alt="img-room" />
+
+            <div class="overlay">
+              <div class="text">Room 1</div>
+              <div class="icons">
+                <i class="fa-regular fa-heart icon-1"></i>
+                <i class="fa-solid fa-share icon-2"></i>
+              </div>
+            </div>
+          </div>
+          <div class="room-div">
+            <img src="./img/room-2.webp" alt="img-room" class="img-block" />
+            <div class="overlay">
+              <div class="text">Room 2</div>
+              <div class="icons">
+                <i class="fa-regular fa-heart icon-1"></i>
+                <i class="fa-solid fa-share icon-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-flex-div">
+          <div class="room-div">
+            <img class="img-block" src="./img/room-3.jpg" alt="img-room" />
+
+            <div class="overlay">
+              <div class="text">Pool</div>
+              <div class="icons">
+                <i class="fa-regular fa-heart icon-1"></i>
+                <i class="fa-solid fa-share icon-2"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="room-div">
+            <img class="img-block" src="./img/room-4.jpg" alt="img-room" />
+
+            <div class="overlay">
+              <div class="text">Reception</div>
+              <div class="icons">
+                <i class="fa-regular fa-heart icon-1"></i>
+                <i class="fa-solid fa-share icon-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section class="food-section" id="section3">
       <h2 class="food-title">Eat & Drink</h2>
@@ -233,60 +290,6 @@
       </div>
     </section>
 
-    <section class="room-section" id="section5">
-      <h2 class="room-title">ROOM Details</h2>
-      <div class="room-main-div">
-        <div class="room-flex-div">
-          <div class="room-div">
-            <img class="img-block" src="./img/room-1.webp" alt="img-room" />
-
-            <div class="overlay">
-              <div class="text">Room 1</div>
-              <div class="icons">
-                <i class="fa-regular fa-heart icon-1"></i>
-                <i class="fa-solid fa-share icon-2"></i>
-              </div>
-            </div>
-          </div>
-          <div class="room-div">
-            <img src="./img/room-2.webp" alt="img-room" class="img-block" />
-            <div class="overlay">
-              <div class="text">Room 2</div>
-              <div class="icons">
-                <i class="fa-regular fa-heart icon-1"></i>
-                <i class="fa-solid fa-share icon-2"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="room-flex-div">
-          <div class="room-div">
-            <img class="img-block" src="./img/room-3.jpg" alt="img-room" />
-
-            <div class="overlay">
-              <div class="text">Pool</div>
-              <div class="icons">
-                <i class="fa-regular fa-heart icon-1"></i>
-                <i class="fa-solid fa-share icon-2"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="room-div">
-            <img class="img-block" src="./img/room-4.jpg" alt="img-room" />
-
-            <div class="overlay">
-              <div class="text">Reception</div>
-              <div class="icons">
-                <i class="fa-regular fa-heart icon-1"></i>
-                <i class="fa-solid fa-share icon-2"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="feedback-section" id="section6">
       <h2 class="feedback-title">Feedback</h2>
@@ -317,6 +320,14 @@
             aria-label="Slide 3"
             class="bg-warning"
           ></button>
+
+          <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+          class="bg-warning"
+        ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -325,22 +336,32 @@
                 <div
                   class="bg-warning rounded-circle d-flex justify-content-center align-items-center me-3 icon-user"
                 >
-                  <i class="fa-regular fa-user fs-4"></i>
+                <img class="avatar-image" src="https://a0.muscache.com/im/pictures/user/193be2b1-cfa0-4d28-b512-7a16d5f9495d.jpg?im_w=240" >
+                
                 </div>
-                <div>
-                  <h4>Oidila Matic</h4>
-                  <p>President</p>
+                <div class="avatar-texts">
+                  <h4>Victoria</h4>
+                  <p class="p-0 m-0 fst-italic text-city" >Foster City, California</p>
+                  <div class="feedback-stars">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="p-0 m-0 text-time">January 2024</p>
+                  </div>
+                  
                 </div>
               </div>
-              <p class="fst-italic mt-3">
+              <p class="fst-italic mt-4">
                 <span>
                   <span>
                     <i class="fa-solid fa-quote-left me-1 fst-italic"></i>
                   </span>
                 </span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
-                pariatur dolorum quidem facere quia placeat voluptatibus labore
-                minima culpa possimus?
+                  This apartment exceeded all of our expectations and provided us with an incredibly comfortable and enjoyable living experience. From the moment we stepped inside, we were captivated by the stunning views and the attention to detail that was evident in every aspect of the space. The apartment was thoughtfully designed and decorated, creating a warm and inviting atmosphere that made us feel right at home. The level of care and love that went into creating this space was truly remarkable. We couldn't have asked for a better place to stay.
                 <span>
                   <i class="fa-solid fa-quote-left ms-1 fst-italic"></i>
                 </span>
@@ -354,22 +375,32 @@
                 <div
                   class="bg-warning rounded-circle d-flex justify-content-center align-items-center me-3 icon-user"
                 >
-                  <i class="fa-regular fa-user fs-4"></i>
+                <img class="avatar-image" src="https://a0.muscache.com/im/pictures/user/e61458ee-9ed0-491d-b06b-9ef96e93ba55.jpg?im_w=240" >
+
                 </div>
-                <div>
-                  <h4>Oidila Matic</h4>
-                  <p>President</p>
+                <div  class="avatar-texts">
+                  <h4> Amani </h4>
+                  <p class="p-0 m-0 fst-italic text-city">Atlanta, Georgia</p>
+                  <div class="feedback-stars">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="p-0 m-0 text-time">October 2023</p>
+                  </div>
+                
                 </div>
               </div>
-              <p class="fst-italic mt-3">
+              <p class="fst-italic mt-4">
                 <span>
                   <span>
                     <i class="fa-solid fa-quote-left me-1 fst-italic"></i>
                   </span>
                 </span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
-                pariatur dolorum quidem facere quia placeat voluptatibus labore
-                minima culpa possimus?
+                Beautiful view, everything was clean, I had to purchase cleaning products and laundry detergent but everything else that was needed was there or provided. Great value!
                 <span>
                   <i class="fa-solid fa-quote-left ms-1 fst-italic"></i>
                 </span>
@@ -383,11 +414,20 @@
                 <div
                   class="bg-warning rounded-circle d-flex justify-content-center align-items-center me-3 icon-user"
                 >
-                  <i class="fa-regular fa-user fs-4"></i>
+                <img class="avatar-image" src="https://a0.muscache.com/im/pictures/user/4ac09b06-d52c-46fb-a8eb-46097fdaab99.jpg?im_w=240" >
                 </div>
-                <div>
-                  <h4>Oidila Matic</h4>
-                  <p>President</p>
+                <div class="avatar-texts">
+                  <h4>Aleksandr</h4>
+                  <div class="feedback-stars">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="p-0 m-0 text-time">January 2023</p>
+                  </div>
                 </div>
               </div>
               <p class="fst-italic mt-3">
@@ -396,15 +436,56 @@
                     <i class="fa-solid fa-quote-left me-1 fst-italic"></i>
                   </span>
                 </span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
-                pariatur dolorum quidem facere quia placeat voluptatibus labore
-                minima culpa possimus?
+                The place is fully consistent with the photos, the host is always available.
+                Excellent view,close to a large shopping center. I liked everything.
                 <span>
                   <i class="fa-solid fa-quote-left ms-1 fst-italic"></i>
                 </span>
               </p>
             </div>
           </div>
+
+          <div class="carousel-item">
+            <div class="m-auto feedback p-3">
+              <div class="d-flex align-items-center">
+                <div
+                  class="bg-warning rounded-circle d-flex justify-content-center align-items-center me-3 icon-user"
+                >
+                <img class="avatar-image" src="https://a0.muscache.com/im/pictures/user/7d2bf3a0-f607-4fff-a87d-3e8c2f158217.jpg?im_w=240" >
+                </div>
+                <div class="avatar-texts">
+                  <h4>Shmulik</h4>
+                  <p class="p-0 m-0 fst-italic text-city">Herzliya, Israel</p>
+                  <div class="feedback-stars">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="p-0 m-0 text-time">October 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="fst-italic mt-3">
+                <span>
+                  <span>
+                    <i class="fa-solid fa-quote-left me-1 fst-italic"></i>
+                  </span>
+                </span>
+                Excellent location
+                beautifully arranged apartment well equipped and has everything you need to enjoy.
+                The apartment owner is always available and answers everything you need.
+                I will definitely come back.
+                <span>
+                  <i class="fa-solid fa-quote-left ms-1 fst-italic"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+
         </div>
 
         <button
