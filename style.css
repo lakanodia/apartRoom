@@ -215,19 +215,20 @@ header .navigation ul .li-name a.active {
   .services-section .services-container .services-div {
     max-width: 450px;
     width: 100%;
+    padding: 15px;
   }
   .services-section .services-container .services-div .service-title {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
   }
   .services-section .services-container .services-div .service-text {
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 15px;
     line-height: 25px;
   }
   .services-section .services-container .services-div .service-icon {
     margin-bottom: 25px;
-    font-size: 15px;
+    font-size: 30px;
     color: rgba(252, 143, 0, 0.794);
   }
 }
@@ -658,8 +659,8 @@ header .navigation ul .li-name a.active {
   width: 100%;
 }
 .contact-section .contact-form-main-div .conact-text-div .conact-text i {
-  font-size: 27px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 30px;
   color: rgba(252, 143, 0, 0.794);
 }
 .contact-section .contact-form-main-div .conact-text-div .social-icon-main-div {
@@ -830,12 +831,13 @@ header .navigation ul .li-name a.active {
   }
   .footer-section .footer-div .footer-text-div {
     margin-top: 50px;
+    text-align: center;
   }
   .footer-section .footer-div .footer-text-div p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .footer-section .footer-div .footer-text-div ul {
-    font-size: 12px;
+    font-size: 16px;
   }
   .footer-section .footer-div .footer-text-div .social-icon-main-div {
     display: flex;

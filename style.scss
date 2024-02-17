@@ -269,18 +269,19 @@ header {
       .services-div {
         max-width: 450px;
         width: 100%;
+        padding: 15px;
         .service-title {
-          font-size: $size-small - 30px;
+          font-size: $size-small - 25px;
           font-weight: 600;
         }
         .service-text {
-          font-size: $size-small - 40px;
+          font-size: $size-small - 35px;
           margin-top: $size-small - 35px;
           line-height: $size-small - 25px;
         }
         .service-icon {
           margin-bottom: $size-small - 25px;
-          font-size: $size-small - 35px;
+          font-size: $size-small - 20px;
           color: $color-yellow;
         }
       }
@@ -739,8 +740,8 @@ header {
         max-width: 350px;
         width: 100%;
         i {
-          font-size: $size-small - 23px;
-          margin-bottom: 10px;
+          font-size: $size-small - 10px;
+          margin-bottom: 30px;
           color: $color-yellow;
         }
       }
@@ -910,11 +911,12 @@ header {
       flex-direction: column;
       .footer-text-div {
         margin-top: $size-small;
+        text-align: center;
         p{
-          font-size: 12px;
+          font-size: 15px;
         }
         ul{
-          font-size: 12px;
+          font-size: 16px;
 
         }
         .social-icon-main-div{
