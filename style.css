@@ -338,7 +338,7 @@ header .navigation ul .li-name a.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   transition: 1s;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-1 .sightseeing-img-1:hover {
@@ -372,7 +372,7 @@ header .navigation ul .li-name a.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   transition: 1s;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-2 .sightseeing-img-2:hover {
@@ -406,7 +406,7 @@ header .navigation ul .li-name a.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   transition: 1s;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-3 .sightseeing-img-3:hover {
@@ -439,7 +439,7 @@ header .navigation ul .li-name a.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   transition: 1s;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-4 .sightseeing-img-4:hover {
@@ -472,7 +472,7 @@ header .navigation ul .li-name a.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   transition: 1s;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-5 .sightseeing-img-5:hover {
@@ -507,7 +507,7 @@ header .navigation ul .li-name a.active {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.3s;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   transition: 1s;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-6 .sightseeing-img-6:hover {
