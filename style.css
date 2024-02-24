@@ -330,6 +330,8 @@ header .navigation ul .li-name a.active {
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-1 {
   grid-column: span 3;
+  position: relative;
+  overflow: hidden;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-1 .sightseeing-img-1 {
   width: 100%;
@@ -342,8 +344,28 @@ header .navigation ul .li-name a.active {
 .sightseeing-section .sightseeing-container .sightseeing-div-1 .sightseeing-img-1:hover {
   filter: grayscale(0%);
 }
+.sightseeing-section .sightseeing-container .sightseeing-div-1 .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-1:hover .text-overlay {
+  opacity: 1;
+}
 .sightseeing-section .sightseeing-container .sightseeing-div-2 {
   grid-row: span 2;
+  position: relative;
+  overflow: hidden;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-2 .sightseeing-img-2 {
   width: 100%;
@@ -356,8 +378,28 @@ header .navigation ul .li-name a.active {
 .sightseeing-section .sightseeing-container .sightseeing-div-2 .sightseeing-img-2:hover {
   filter: grayscale(0%);
 }
+.sightseeing-section .sightseeing-container .sightseeing-div-2 .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-2:hover .text-overlay {
+  opacity: 1;
+}
 .sightseeing-section .sightseeing-container .sightseeing-div-3 {
   grid-column: span 2;
+  position: relative;
+  overflow: hidden;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-3 .sightseeing-img-3 {
   width: 100%;
@@ -370,6 +412,28 @@ header .navigation ul .li-name a.active {
 .sightseeing-section .sightseeing-container .sightseeing-div-3 .sightseeing-img-3:hover {
   filter: grayscale(0%);
 }
+.sightseeing-section .sightseeing-container .sightseeing-div-3 .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-3:hover .text-overlay {
+  opacity: 1;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-4 {
+  position: relative;
+  overflow: hidden;
+}
 .sightseeing-section .sightseeing-container .sightseeing-div-4 .sightseeing-img-4 {
   width: 100%;
   height: 100%;
@@ -380,6 +444,28 @@ header .navigation ul .li-name a.active {
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-4 .sightseeing-img-4:hover {
   filter: grayscale(0%);
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-4 .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-4:hover .text-overlay {
+  opacity: 1;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-5 {
+  position: relative;
+  overflow: hidden;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-5 .sightseeing-img-5 {
   width: 100%;
@@ -392,8 +478,28 @@ header .navigation ul .li-name a.active {
 .sightseeing-section .sightseeing-container .sightseeing-div-5 .sightseeing-img-5:hover {
   filter: grayscale(0%);
 }
+.sightseeing-section .sightseeing-container .sightseeing-div-5 .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-5:hover .text-overlay {
+  opacity: 1;
+}
 .sightseeing-section .sightseeing-container .sightseeing-div-6 {
   grid-column: span 3;
+  position: relative;
+  overflow: hidden;
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-6 .sightseeing-img-6 {
   width: 100%;
@@ -406,6 +512,24 @@ header .navigation ul .li-name a.active {
 }
 .sightseeing-section .sightseeing-container .sightseeing-div-6 .sightseeing-img-6:hover {
   filter: grayscale(0%);
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-6 .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.sightseeing-section .sightseeing-container .sightseeing-div-6:hover .text-overlay {
+  opacity: 1;
 }
 @media (max-width: 580px) {
   .sightseeing-section .sightseeing-title {
