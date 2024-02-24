@@ -24,16 +24,10 @@ const del = require("delete");
 const eslint = require("gulp-eslint");
 // allow Gulp to rename files
 const rename = require("gulp-rename");
-// Stylus library for simple declaration of media queries
-const rupture = require("rupture");
 // allow the browser to map minified code back to a readable source
 const sourcemaps = require("gulp-sourcemaps");
-// lint Stylus
-const stylint = require("gulp-stylint");
 // lint sass
 const sassLint = require('gulp-sass-lint');
-// transpile Stylus into CSS
-const stylus = require("gulp-stylus");
 // serve files over LAN, and synchronise file changes with the browser
 const sync = require("browser-sync").create();
 // minify JS & replace variable names, for efficiency
@@ -62,8 +56,6 @@ function clean(cb) {
         [
             PATHS.javascript.transpiled,
             PATHS.javascript.uglified,
-            PATHS.stylus.transpiled,
-            PATHS.stylus.uglified,
             PATHS.scss.transpiled,
             PATHS.scss.uglified,
         ],
@@ -128,18 +120,6 @@ function transpile_javascript(cb) {
             cb();
         });
 }
-/*
-    private task to lint Stylus.
-*/
-function lint_stylus(cb) {
-    return src(PATHS.stylus.lint)
-        .pipe(stylint({ config: PATHS.stylus.config }))
-        .pipe(stylint.reporter())
-        // callback to signal task completion
-        .on("end", function() {
-            cb();
-        });
-}
 
 /*
     private task to lint Sass.
@@ -152,37 +132,6 @@ function lint_scss(cb) {
         .pipe(sassLint.format()) // Use sassLint.format() to output lint results to the console
         .pipe(sassLint.failOnError()) // Optionally, make the task fail on lint errors
         .on('end', function() {
-            cb();
-        });
-}
-/*
-    private task to transpile Stylus, make CSS more efficient, and create a sourcemap.
-*/
-function transpile_stylus(cb) {
-    return src(PATHS.stylus.input)
-        .pipe(sourcemaps.init())
-        // use rupture library for simple declaration of media queries
-        .pipe(stylus({
-            compress: true,
-            use: [rupture()]
-        }))
-        // replace native CSS imports with the imported file's contents
-        .pipe(css_import())
-        // autoprefix CSS for browser compatability
-        .pipe(autoprefix())
-        // combine rules within duplicate media queries into single media queries
-        .pipe(combine_media_queries())
-        // output CSS
-        .pipe(dest(PATHS.stylus.output))
-        // minify CSS and output a copy
-        .pipe(clean_css({ level: 1 }))
-        .pipe(rename({ extname: ".min.css" }))
-        .pipe(sourcemaps.write("./"))
-        .pipe(dest(PATHS.stylus.output))
-        // reflect updated code in the browser
-        .pipe(sync.stream())
-        // callback to signal task completion
-        .on("end", function() {
             cb();
         });
 }
@@ -234,8 +183,6 @@ exports.clean                = clean;
 exports.transpile_templates  = transpile_templates;
 exports.lint_javascript      = lint_javascript;
 exports.transpile_javascript = transpile_javascript;
-exports.lint_stylus          = lint_stylus;
-exports.transpile_stylus     = transpile_stylus;
 exports.transpile_scss       = transpile_scss;
 exports.lint_scss            = lint_scss;
 exports.minify_images        = minify_images;

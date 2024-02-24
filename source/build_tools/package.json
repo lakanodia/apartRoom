@@ -35,8 +35,6 @@
     "gulp-sass": "^5.1.0",
     "gulp-sass-lint": "^1.4.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-stylint": "^4.0.2",
-    "gulp-stylus": "^2.7.0",
     "gulp-tinypng-compress": "^1.2.5",
     "gulp-uglify": "^3.0.2",
     "rupture": "^0.7.1",

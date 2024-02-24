@@ -38,23 +38,12 @@ function develop () {
             PRIVATE_TASKS.transpile_javascript,
         )
     );
-    // watch Stylus files for changes
-    // watch(
-    //     PATHS.stylus.watch,
-    //     // run when function is initialised
-    //     { ignoreInitial: false },
-    //     // run all Stylus tasks in sequence
-    //     series(
-    //         PRIVATE_TASKS.lint_stylus,
-    //         PRIVATE_TASKS.transpile_stylus,
-    //     )
-    // );
     // watch Scss files for changes
     watch(
         PATHS.scss.watch,
         // run when function is initialised
         { ignoreInitial: false },
-        // run all Stylus tasks in sequence
+        // run all scss tasks in sequence
         series(
             PRIVATE_TASKS.lint_scss,
             PRIVATE_TASKS.transpile_scss,
