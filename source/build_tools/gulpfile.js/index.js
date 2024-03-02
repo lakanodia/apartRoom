@@ -18,7 +18,7 @@ exports.default = series(
     PRIVATE_TASKS.clean,
     PUBLIC_TASKS.develop,
 );
-exports.reference = parallel(
+exports.start = parallel(
     PRIVATE_TASKS.clean,
     PUBLIC_TASKS.reference,
     PUBLIC_TASKS.develop,
