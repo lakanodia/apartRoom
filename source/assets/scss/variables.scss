@@ -1,0 +1,51 @@
+$primary-color: #434343;
+$color-white: #fefefe;
+$color-black: #000000;
+$color-gray: rgba(160, 160, 160, 0.586);
+$color-yellow: rgba(252, 143, 0, 0.794);
+$color-gray-2: rgba(198, 198, 198, 0.374);
+$color-gray-light: rgba(217, 217, 217, 0.374);
+
+$size-small: 50px;
+$size-medium: 100px;
+$size-large: 15px;
+
+$percent-50: 50%;
+$percent-100: 100%;
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+@mixin d-flex($flex, $content: null, $items: null) {
+  display: $flex;
+  @if $content {
+    justify-content: $content;
+  }
+  @if $items {
+    align-items: $items;
+  }
+}
