@@ -6,12 +6,12 @@
 @import "./global/global_footer.scss";
 
 // page 
-@import "welcome_page.scss";
-@import "appliances_page.scss";
-@import "room_page.scss";
-@import "sightseeing_page.scss";
-@import "feedback_page.scss";
-@import "book_page.scss";
-@import "map_page.scss";
+@import "./pages/welcome_page.scss";
+@import "./pages/appliances_page.scss";
+@import "./pages/room_page.scss";
+@import "./pages/sightseeing_page.scss";
+@import "./pages/feedback_page.scss";
+@import "./pages/book_page.scss";
+@import "./pages/map_page.scss";
 
 @import "style.scss";
