@@ -9,7 +9,7 @@
       height: 800px;
       object-fit: cover;
   
-      // Background image styles
+      /* Background image styles */
       background-image: url("../img/view.jpeg");
       background-size: cover;
       background-position: center;
@@ -17,7 +17,7 @@
       background-attachment: fixed;
       transition: 0.5s;
   
-      // Dark overlay styles
+      /* Dark overlay styles */
       &::before {
         content: "";
         position: absolute;
