@@ -4,7 +4,8 @@
   "description": "A CSS framework which fluidly interpolates not only your entire font stack, but also all whitespace and element sizes.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint:scss": "stylelint '../**/*.scss'"
   },
   "repository": {
     "type": "git",
@@ -31,15 +32,18 @@
     "gulp-eslint": "^6.0.0",
     "gulp-join-media-queries": "^1.2.0",
     "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-sass-lint": "^1.4.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-tinypng-compress": "^1.2.5",
     "gulp-uglify": "^3.0.2",
+    "postcss-scss": "^4.0.9",
     "rupture": "^0.7.1",
     "sass": "^1.71.1",
-    "stylint-stylish": "^2.0.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-scss": "^6.1.0",    
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }
