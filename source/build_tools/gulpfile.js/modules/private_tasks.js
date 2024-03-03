@@ -167,7 +167,7 @@ function minify_images (cb) {
             key: process.env.API_KEY_TINYPNG,
             // suppress logging if gulp is run with --silent or -S flags
             log: !(process.argv.includes("--silent") || process.argv.includes("-S")),
-            // sigFile: PATHS.images.signature_file,
+            sigFile: PATHS.images.signature_file,
         }))
         .pipe(dest(PATHS.images.output))
         // callback to signal task completion
