@@ -27,7 +27,8 @@ const rename = require("gulp-rename");
 // allow the browser to map minified code back to a readable source
 const sourcemaps = require("gulp-sourcemaps");
 // lint sass
-const sassLint = require('gulp-sass-lint');
+const postcss = require('gulp-postcss');
+const stylelint = require('stylelint');
 // serve files over LAN, and synchronise file changes with the browser
 const sync = require("browser-sync").create();
 // minify JS & replace variable names, for efficiency
@@ -125,12 +126,12 @@ function transpile_javascript(cb) {
     private task to lint Sass.
 */
 function lint_scss(cb) {
-    return src(PATHS.scss.lint) // Assuming PATHS.scss.lint is the path to your SCSS files
-        .pipe(sassLint({
-            configFile: PATHS.scss.config // Assuming PATHS.scss.config points to your sass-lint config file
-        }))
-        .pipe(sassLint.format()) // Use sassLint.format() to output lint results to the console
-        .pipe(sassLint.failOnError()) // Optionally, make the task fail on lint errors
+      const plugins = [
+        stylelint(),
+      ];
+
+    return src(PATHS.scss.lint) // Assuming PATHS.scss.lint is the path to your SCSS files        
+        .pipe(postcss(plugins, { syntax: require('postcss-scss') }))
         .on('end', function() {
             cb();
         });
