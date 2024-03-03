@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "test",
-    "lint:scss": "stylelint '../**/*.scss'"
+    "lint:scss": "stylelint ../**/*.scss"
   },
   "repository": {
     "type": "git",

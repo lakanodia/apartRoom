@@ -1,19 +1,24 @@
 .services-section {
     padding: 70px;
+
     .services-title {
       font-size: $size-small;
       text-align: center;
-      text-shadow: 5px 20px rgba(215, 215, 215, 0.374);
+      text-shadow: 5px 20px rgb(215 215 215 / 37.4%);
       font-weight: 900;
       margin-top: $size-small - 30px;
       margin-bottom: $size-small - 31px;
     }
+
     .services-container {
       max-width: 1100px;
       width: 100%;
+
       @include d-flex(flex, space-between, center);
+
       flex-wrap: wrap;
       margin: 0 auto;
+
       .services-div {
         max-width: 350px;
         width: $percent-100;
@@ -24,18 +29,22 @@
         margin-top: $size-small - 20px;
         box-sizing: border-box;
         transition: 0.3s;
+
         &:hover {
           box-shadow: 2px 5px 35px $color-gray;
         }
+
         .service-title {
           font-size: $size-small - 28px;
           font-weight: 600;
         }
+
         .service-text {
           font-size: $size-small - 35px;
           margin-top: $size-small - 30px;
           line-height: $size-small - 22px;
         }
+
         .service-icon {
           margin-bottom: $size-small - 25px;
           font-size: $size-small - 25px;
@@ -43,10 +52,12 @@
         }
       }
     }
-    @media (max-width: 870px) {
+
+    @media (width <= 870px) {
       .services-container {
         align-items: center;
         justify-content: center;
+
         .services-div {
           max-width: 450px;
           width: 100%;
@@ -54,26 +65,31 @@
       }
     }
   
-    @media (max-width: 560px) {
+    @media (width <= 560px) {
       .services-title {
         font-size: $size-small - 20px;
       }
+
       .services-container {
         align-items: center;
         justify-content: center;
+
         .services-div {
           max-width: 450px;
           width: 100%;
           padding: 15px;
+
           .service-title {
             font-size: $size-small - 25px;
             font-weight: 600;
           }
+
           .service-text {
             font-size: $size-small - 35px;
             margin-top: $size-small - 35px;
             line-height: $size-small - 25px;
           }
+
           .service-icon {
             margin-bottom: $size-small - 25px;
             font-size: $size-small - 20px;
