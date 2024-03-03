@@ -18,6 +18,11 @@ exports.default = series(
     PRIVATE_TASKS.clean,
     PUBLIC_TASKS.develop,
 );
+
+exports.lint = series(
+    PRIVATE_TASKS.lint_scss
+);
+
 exports.start = parallel(
     PRIVATE_TASKS.clean,
     PUBLIC_TASKS.reference,
