@@ -5,15 +5,18 @@
       padding: $size-small;
       font-size: 50px;
       font-weight: 900;
-      text-shadow: 5px 20px rgba(198, 198, 198, 0.374);
+      text-shadow: 5px 20px rgb(198 198 198 / 37.4%);
     }
+
     .contact-text{
       font-size: 15px;
       text-align: center;
       font-style: italic
     }
+
     .contact-form-main-div {
       @include d-flex(flex, space-evenly, center);
+
       .contact-form {
         max-width: 900px;
         width: 100%;
@@ -22,6 +25,7 @@
         .form-input-div {
           display: flex;
           justify-content: space-between;
+
           input {
             border: none;
             width: 420px;
@@ -30,10 +34,12 @@
             border-radius: 40px;
             outline: none;
           }
+
           input:focus {
             border: 1px solid $color-yellow;
           }
         }
+
         .form-input {
           input {
             width: 100%;
@@ -43,9 +49,11 @@
             border-radius: 40px;
             outline: none;
           }
+
           input:focus {
             border: 1px solid $color-yellow;
           }
+
           textarea {
             width: 100%;
             border: none;
@@ -54,10 +62,12 @@
             border-radius: 40px;
             outline: none;
           }
+
           textarea:focus {
             border: 1px solid $color-yellow;
           }
         }
+
         .form-input-btn {
           button {
             background-color: $color-yellow;
@@ -68,32 +78,41 @@
             margin-top: 20px;
             outline: none;
             transition: 0.3s;
+
             &:hover {
-              background-color: rgb(211, 136, 50);
+              background-color: rgb(211 136 50);
             }
           }
         }
       }
+
       .conact-text-div {
         padding: 20px;
+
         .conact-text {
           max-width: 350px;
           width: 100%;
+
           i {
             font-size: $size-small - 10px;
             margin-bottom: 30px;
             color: $color-yellow;
           }
         }
+
         .social-icon-main-div {
           display: flex;
+
           a {
             text-decoration: none;
+
             .social-icon-div {
               width: 50px;
               height: 50px;
               border-radius: 50%;
+
               @include d-flex(flex, center, center);
+
               margin-right: 15px;
               background-color: $color-yellow;
               color: $color-white;
@@ -103,55 +122,68 @@
         }
       }
     }
-    @media (max-width: 580px) {
+
+    @media (width <= 580px) {
       .contact-title   {
         font-size: $size-small - 20px;
       }
     }
-    @media (max-width: 1140px) {
+
+    @media (width <= 1140px) {
       .contact-form-main-div {
         flex-direction: column;
         align-items: center;
+
         .contact-form {
           transform: scale(0.9);
+
           .form-input-btn {
             text-align: center;
           }
         }
+
         .conact-text-div {
           text-align: center;
+
           .social-icon-main-div{
             display: flex;
             justify-content: space-between;
           }
         }
+
         .airbnb-embed-frame{
           transform: scale(0.9);
         }
       }
     }
   
-    @media (max-width: 750px) {
+    @media (width <= 750px) {
       .contact-form-main-div {
         flex-direction: column;
         align-items: center;
+
         .contact-form {
           transform: scale(0.9);
+
           .form-input-div {
             flex-direction: column;
+
             input {
               width: 100%;
               margin-top: $size-small - 20px;
             }
           }
+
           .form-input-btn {
             text-align: center;
           }
         }
+
         .conact-text-div {
           text-align: center;
           transform: scale(0.9);
         }
+
         .airbnb-embed-frame{
           transform: scale(0.8);
         }

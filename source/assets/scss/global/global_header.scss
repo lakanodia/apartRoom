@@ -7,19 +7,25 @@ header {
     left: 0;
     width: $percent-100;
     background-color: $color-white;
+
     @include d-flex(flex, space-between, center);
+
     z-index: 100;
   
     .nav-div-left {
       @include d-flex(flex, space-between, center);
-      background-color: rgb(255, 183, 0);
+
+      background-color: rgb(255 183 0);
       padding: 10px 20px;
+
       .name {
         img {
           width: 35px;
           margin-right: 10px;
         }
+
         margin-left: 10px;
+
         p {
           margin: 0;
         }
@@ -31,18 +37,23 @@ header {
         list-style: none;
         margin: 0;
         padding: 0;
+
         @include d-flex(flex);
+
         .li-name {
           margin-right: 30px;
+
           a {
             text-decoration: none;
             transition: all 0.3s;
             color: #555;
+
             &:hover {
               color: $color-black;
               text-shadow: 1px 1px 2px $color-gray, 0 0 1em $color-yellow,
                 0 0 0.2em $primary-color;
             }
+
             &.active {
               color: $color-black;
               text-shadow: 1px 1px 2px $color-gray, 0 0 1em $color-yellow,
@@ -51,33 +62,36 @@ header {
           }
         }
       }
-      @media (max-width: 1150px) {
+
+      @media (width <= 1150px) {
         .ul-list {
           font-size: 15px;
         }
       }
-      // @media (max-width: 900px) {
-      //   .ul-list {
-      //     display: none;
-      //   }
-      // }
+
+      /* @media (max-width: 900px) {
+         .ul-list {
+           display: none;displaydisplaydisplay
+         }
+       } */
     }
-    @media (max-width: 1150px) {
+
+    @media (width <= 1150px) {
       .navigation{
         margin-left: 20px;
       }
     }
   
-    // .nav-burger-bar {
-    //   display: none;
-    //   font-size: $primary-color;
-    //   font-size: $size-small - 5px;
-    //   margin-right: 10px;
-    //   cursor: pointer;
-    // }
-    // @media (max-width: 900px) {
-    //   .nav-burger-bar {
-    //     display: block;
-    //   }
-    // }
+    /* .nav-burger-bar {
+      display: none;displaydisplaydisplay
+      font-size: $primary-color;font-sizefont-sizefont-size
+      font-size: $size-small - 5px;font-sizefont-sizefont-size
+      margin-right: 10px;margin-rightmargin-rightmargin-right
+      cursor: pointer;cursorcursorcursor
+    }
+    @media (max-width: 900px) {
+      .nav-burger-bar {
+        display: block;displaydisplaydisplay
+      }
+    } */
   }

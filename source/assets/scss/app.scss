@@ -1,11 +1,11 @@
 @import "reset.scss";
 @import "variables.scss";
 
-// global
+/* global */
 @import "./global/global_header.scss";
 @import "./global/global_footer.scss";
 
-// page 
+/* page  */
 @import "./pages/welcome_page.scss";
 @import "./pages/appliances_page.scss";
 @import "./pages/room_page.scss";
@@ -14,4 +14,5 @@
 @import "./pages/book_page.scss";
 @import "./pages/map_page.scss";
 
+/* Remaining */
 @import "style.scss";

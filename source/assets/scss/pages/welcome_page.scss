@@ -1,5 +1,6 @@
 .backround-section {
     margin-top: $size-small;
+
     .backround-div {
       position: relative;
       padding: 50px;
@@ -8,7 +9,7 @@
       height: 800px;
       object-fit: cover;
   
-      // Background image styles
+      /* Background image styles */
       background-image: url("../img/view.jpeg");
       background-size: cover;
       background-position: center;
@@ -16,7 +17,7 @@
       background-attachment: fixed;
       transition: 0.5s;
   
-      // Dark overlay styles
+      /* Dark overlay styles */
       &::before {
         content: "";
         position: absolute;
@@ -24,7 +25,7 @@
         left: 0;
         width: $percent-100;
         height: $percent-100;
-        background-color: rgba(0, 0, 0, 0.308);
+        background-color: rgb(0 0 0 / 30.8%);
         z-index: 1;
       }
   
@@ -36,15 +37,18 @@
         transform: translate(-$percent-50, -$percent-50);
         width: $percent-100;
         z-index: 2;
+
         .title {
           animation: drop-in 1s ease 200ms backwards;
           font-size: $size-small;
         }
+
         .decsription {
           animation: drop-in 1200ms ease 500ms backwards;
           margin-top: $size-small;
           font-style: italic;
         }
+
         .icon-arrow {
           margin-top: $size-medium;
           animation: drop-in 1500ms ease 700ms backwards, bounce 3s infinite;
