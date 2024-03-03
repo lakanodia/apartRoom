@@ -139,17 +139,6 @@ a:active {
 	text-decoration: none;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	margin: 0;
-	font-family: Arial,sans-serif;
-	background-color: #fefefe;
-	font-family: "Mulish",sans-serif;
-}
-
 header {
 	position: fixed;
 	top: 0;
@@ -208,6 +197,91 @@ header .navigation ul .li-name a:hover {
 header .navigation ul .li-name a.active {
 	color: #000;
 	text-shadow: 1px 1px 2px rgba(160,160,160,.586),0 0 1em rgba(252,143,0,.794),0 0 .2em #434343;
+}
+
+.footer-section {
+	padding: 100px;
+}
+
+.footer-section .footer-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-section .footer-div .footer-text-div {
+	max-width: 300px;
+	width: 100%;
+	margin-right: 50px;
+}
+
+.footer-section .footer-div .footer-text-div ul {
+	color: #434343;
+	padding: 0;
+}
+
+.footer-section .footer-div .footer-text-div ul li {
+	margin-top: 10px;
+}
+
+.footer-section .footer-div .footer-text-div p {
+	color: #434343;
+	font-size: 16px;
+}
+
+.footer-section .footer-div .footer-text-div .social-icon-main-div {
+	display: flex;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.footer-section .footer-div .footer-text-div .social-icon-main-div a {
+	text-decoration: none;
+}
+
+.footer-section .footer-div .footer-text-div .social-icon-main-div a .social-icon-div {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+	background-color: rgba(252,143,0,.794);
+	color: #fefefe;
+	cursor: pointer;
+	font-size: 15px;
+	margin-right: 15px;
+}
+
+.footer-section .footer-div .footer-img-div h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.footer-section .footer-div .footer-img-div .photo-div {
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-section .footer-div .footer-img-div .photo-div img {
+	max-width: 60px;
+	width: 100%;
+	height: 60px;
+	margin: 5px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.footer-section .line {
+	margin-top: 50px;
+	height: .5px;
+	width: 100%;
+	background-color: rgba(160,160,160,.586);
 }
 
 .backround-section {
@@ -326,64 +400,80 @@ header .navigation ul .li-name a.active {
 	color: rgba(252,143,0,.794);
 }
 
-.food-section {
-	background-color: #f0f0f0;
-	padding: 50px;
-}
-
-.food-section .food-title {
-	font-size: 50px;
+.room-section .room-title {
 	text-align: center;
+	margin-bottom: 10px;
+	padding: 100px;
+	font-size: 50px;
 	font-weight: 900;
-	padding: 50px;
 	text-shadow: 5px 20px rgba(198,198,198,.374);
 }
 
-.food-section .food-container {
+.room-section .room-main-div .room-flex-div {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 30px 100px;
 }
 
-.food-section .food-container .food-div {
-	max-width: 380px;
-	width: 100%;
-	border-radius: 8px;
-	background-color: #fefefe;
-	box-shadow: 5px 5px 30px #434343;
-	transition: .3s;
+.room-section .room-main-div .room-div {
+	position: relative;
+	width: 40%;
+	margin: 20px;
+	height: 400px;
 }
 
-.food-section .food-container .food-div .food-img {
+.room-section .room-main-div .room-div img {
+	display: block;
 	width: 100%;
-	height: 250px;
+	height: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
 }
 
-.food-section .food-container .food-div .text-food-div {
-	padding: 35px;
+.room-section .room-main-div .room-div .overlay {
+	color: rgba(160,160,160,.586);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(255,255,255,.3411764706);
 }
 
-.food-section .food-container .food-div .text-food-div h3 {
-	margin-bottom: 20px;
-	font-weight: 600;
+.room-section .room-main-div .room-div .overlay .text {
+	color: #000;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
-.food-section .food-container .food-div .text-food-div p {
-	font-size: 15px;
-	margin-bottom: 15px;
+.room-section .room-main-div .room-div .overlay .icons {
+	color: #000;
+	display: flex;
+	justify-content: space-between;
 }
 
-.food-section .food-container .food-div .text-food-div i {
-	color: rgba(252,143,0,.794);
+.room-section .room-main-div .room-div .overlay .icons .icon-1 {
+	position: absolute;
+	bottom: 1%;
+	left: 1%;
 }
 
-.food-section .food-container .food-div:hover {
-	transform: translateY(-17px);
+.room-section .room-main-div .room-div .overlay .icons .icon-2 {
+	position: absolute;
+	bottom: 1%;
+	right: 1%;
+}
+
+.room-section .room-main-div .room-div:hover .overlay {
+	opacity: 1;
 }
 
 .sightseeing-section .sightseeing-title {
@@ -634,82 +724,6 @@ header .navigation ul .li-name a.active {
 	opacity: 1;
 }
 
-.room-section .room-title {
-	text-align: center;
-	margin-bottom: 10px;
-	padding: 100px;
-	font-size: 50px;
-	font-weight: 900;
-	text-shadow: 5px 20px rgba(198,198,198,.374);
-}
-
-.room-section .room-main-div .room-flex-div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.room-section .room-main-div .room-div {
-	position: relative;
-	width: 40%;
-	margin: 20px;
-	height: 400px;
-}
-
-.room-section .room-main-div .room-div img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-}
-
-.room-section .room-main-div .room-div .overlay {
-	color: rgba(160,160,160,.586);
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: rgba(255,255,255,.3411764706);
-}
-
-.room-section .room-main-div .room-div .overlay .text {
-	color: #000;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.room-section .room-main-div .room-div .overlay .icons {
-	color: #000;
-	display: flex;
-	justify-content: space-between;
-}
-
-.room-section .room-main-div .room-div .overlay .icons .icon-1 {
-	position: absolute;
-	bottom: 1%;
-	left: 1%;
-}
-
-.room-section .room-main-div .room-div .overlay .icons .icon-2 {
-	position: absolute;
-	bottom: 1%;
-	right: 1%;
-}
-
-.room-section .room-main-div .room-div:hover .overlay {
-	opacity: 1;
-}
-
 .feedback-section .feedback-title {
 	text-align: center;
 	margin-bottom: 10px;
@@ -891,89 +905,75 @@ header .navigation ul .li-name a.active {
 	width: 100%;
 }
 
-.footer-section {
-	padding: 100px;
+html {
+	scroll-behavior: smooth;
 }
 
-.footer-section .footer-div {
+body {
+	margin: 0;
+	font-family: Arial,sans-serif;
+	background-color: #fefefe;
+	font-family: "Mulish",sans-serif;
+}
+
+.food-section {
+	background-color: #f0f0f0;
+	padding: 50px;
+}
+
+.food-section .food-title {
+	font-size: 50px;
+	text-align: center;
+	font-weight: 900;
+	padding: 50px;
+	text-shadow: 5px 20px rgba(198,198,198,.374);
+}
+
+.food-section .food-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 30px 100px;
 }
 
-.footer-section .footer-div .footer-text-div {
-	max-width: 300px;
+.food-section .food-container .food-div {
+	max-width: 380px;
 	width: 100%;
-	margin-right: 50px;
+	border-radius: 8px;
+	background-color: #fefefe;
+	box-shadow: 5px 5px 30px #434343;
+	transition: .3s;
 }
 
-.footer-section .footer-div .footer-text-div ul {
-	color: #434343;
-	padding: 0;
-}
-
-.footer-section .footer-div .footer-text-div ul li {
-	margin-top: 10px;
-}
-
-.footer-section .footer-div .footer-text-div p {
-	color: #434343;
-	font-size: 16px;
-}
-
-.footer-section .footer-div .footer-text-div .social-icon-main-div {
-	display: flex;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.footer-section .footer-div .footer-text-div .social-icon-main-div a {
-	text-decoration: none;
-}
-
-.footer-section .footer-div .footer-text-div .social-icon-main-div a .social-icon-div {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 5px;
-	background-color: rgba(252,143,0,.794);
-	color: #fefefe;
-	cursor: pointer;
-	font-size: 15px;
-	margin-right: 15px;
-}
-
-.footer-section .footer-div .footer-img-div h4 {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.footer-section .footer-div .footer-img-div .photo-div {
-	width: 250px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.footer-section .footer-div .footer-img-div .photo-div img {
-	max-width: 60px;
+.food-section .food-container .food-div .food-img {
 	width: 100%;
-	height: 60px;
-	margin: 5px;
+	height: 250px;
 	-o-object-fit: cover;
 	object-fit: cover;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
 
-.footer-section .line {
-	margin-top: 50px;
-	height: .5px;
-	width: 100%;
-	background-color: rgba(160,160,160,.586);
+.food-section .food-container .food-div .text-food-div {
+	padding: 35px;
+}
+
+.food-section .food-container .food-div .text-food-div h3 {
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.food-section .food-container .food-div .text-food-div p {
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+.food-section .food-container .food-div .text-food-div i {
+	color: rgba(252,143,0,.794);
+}
+
+.food-section .food-container .food-div:hover {
+	transform: translateY(-17px);
 }
 
 @media (max-width: 1300px) {
@@ -1143,39 +1143,6 @@ header .navigation {
 
 @media (max-width: 580px) {
 
-.food-section .food-title {
-	font-size: 30px;
-}
-
-.food-section .food-container {
-	flex-direction: column;
-	padding: 0;
-}
-
-.food-section .food-container .food-div {
-	margin-top: 50px;
-}
-
-.sightseeing-section .sightseeing-title {
-	font-size: 30px;
-}
-
-.sightseeing-section .sightseeing-container {
-	padding: 10px;
-}
-
-.room-section .room-title {
-	font-size: 30px;
-}
-
-.feedback-section .feedback-title {
-	font-size: 30px;
-}
-
-.contact-section .contact-title {
-	font-size: 30px;
-}
-
 .footer-section .footer-div {
 	flex-direction: column;
 }
@@ -1200,6 +1167,39 @@ header .navigation {
 
 .footer-section .footer-div .footer-text-div .social-icon-main-div a {
 	margin-top: 5px;
+}
+
+.room-section .room-title {
+	font-size: 30px;
+}
+
+.sightseeing-section .sightseeing-title {
+	font-size: 30px;
+}
+
+.sightseeing-section .sightseeing-container {
+	padding: 10px;
+}
+
+.feedback-section .feedback-title {
+	font-size: 30px;
+}
+
+.contact-section .contact-title {
+	font-size: 30px;
+}
+
+.food-section .food-title {
+	font-size: 30px;
+}
+
+.food-section .food-container {
+	flex-direction: column;
+	padding: 0;
+}
+
+.food-section .food-container .food-div {
+	margin-top: 50px;
 }
 
 }
