@@ -1,0 +1,8 @@
+.map-section {
+    margin-top: $size-small;
+    .map-div {
+      iframe {
+        width: 100%;
+      }
+    }
+  }

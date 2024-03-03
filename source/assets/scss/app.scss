@@ -1,9 +1,17 @@
 @import "reset.scss";
 @import "variables.scss";
+
+// global
 @import "global_header.scss";
 @import "global_footer.scss";
+
+// page 
 @import "welcome_page.scss";
 @import "appliances_page.scss";
-
+@import "room_page.scss";
+@import "sightseeing_page.scss";
+@import "feedback_page.scss";
+@import "book_page.scss";
+@import "map_page.scss";
 
 @import "style.scss";
