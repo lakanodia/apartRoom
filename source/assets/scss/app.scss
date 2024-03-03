@@ -2,8 +2,8 @@
 @import "variables.scss";
 
 // global
-@import "global_header.scss";
-@import "global_footer.scss";
+@import "./global/global_header.scss";
+@import "./global/global_footer.scss";
 
 // page 
 @import "welcome_page.scss";
