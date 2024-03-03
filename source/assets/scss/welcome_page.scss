@@ -1,0 +1,57 @@
+.backround-section {
+    margin-top: $size-small;
+    .backround-div {
+      position: relative;
+      padding: 50px;
+      color: $color-white;
+      text-align: center;
+      height: 800px;
+      object-fit: cover;
+  
+      // Background image styles
+      background-image: url("../img/view.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      transition: 0.5s;
+  
+      // Dark overlay styles
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $percent-100;
+        height: $percent-100;
+        background-color: rgba(0, 0, 0, 0.308);
+        z-index: 1;
+      }
+  
+      .backround-text {
+        max-width: 400px;
+        position: absolute;
+        top: $percent-50;
+        left: $percent-50;
+        transform: translate(-$percent-50, -$percent-50);
+        width: $percent-100;
+        z-index: 2;
+        .title {
+          animation: drop-in 1s ease 200ms backwards;
+          font-size: $size-small;
+        }
+        .decsription {
+          animation: drop-in 1200ms ease 500ms backwards;
+          margin-top: $size-small;
+          font-style: italic;
+        }
+        .icon-arrow {
+          margin-top: $size-medium;
+          animation: drop-in 1500ms ease 700ms backwards, bounce 3s infinite;
+          font-size: $size-small;
+          cursor: pointer;
+          color: $color-white;
+        }
+      }
+    }
+  }
