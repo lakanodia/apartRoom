@@ -253,9 +253,12 @@ header .navigation ul .li-name a.active {
 	margin-right: 15px;
 }
 
-.footer-section .footer-div .footer-img-div h4 {
+.footer-section .footer-div .footer-img-div .instagram-posts {
+	transform: scale(0.7);
+}
+
+.footer-section .footer-div .footer-img-div .instagram-posts h2 {
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 .footer-section .footer-div .footer-img-div .photo-div {
@@ -1022,10 +1025,11 @@ header .navigation {
 .footer-section .footer-div .footer-text-div {
 	margin-top: 50px;
 	text-align: center;
+	margin-right: 0;
 }
 
 .footer-section .footer-div .footer-text-div p {
-	font-size: 15px;
+	font-size: 13px;
 }
 
 .footer-section .footer-div .footer-text-div ul {

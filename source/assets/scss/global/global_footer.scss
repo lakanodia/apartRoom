@@ -49,10 +49,13 @@
       }
 
       .footer-img-div {
-        h4 {
-          text-align: center;
-          margin-bottom: 20px;
+        .instagram-posts{
+          transform: scale(0.7);
+          h2{
+            text-align: center;
+          }
         }
+
 
         .photo-div {
           width: 250px;
@@ -100,9 +103,10 @@
         .footer-text-div {
           margin-top: $size-small;
           text-align: center;
+          margin-right: 0;
 
           p{
-            font-size: 15px;
+            font-size: 13px;
           }
 
           ul{
