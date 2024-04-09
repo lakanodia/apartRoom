@@ -328,6 +328,11 @@ header .navigation ul .li-name a.active {
 	font-size: 50px;
 }
 
+.backround-section .backround-div .backround-text .title-city {
+	animation: drop-in 1s ease 200ms backwards;
+	font-size: 30px;
+}
+
 .backround-section .backround-div .backround-text .decsription {
 	animation: drop-in 1200ms ease 500ms backwards;
 	margin-top: 50px;

@@ -42,7 +42,10 @@
           animation: drop-in 1s ease 200ms backwards;
           font-size: $size-small;
         }
-
+        .title-city {
+          animation: drop-in 1s ease 200ms backwards;
+          font-size: $size-small - 20px;
+        }
         .decsription {
           animation: drop-in 1200ms ease 500ms backwards;
           margin-top: $size-small;
