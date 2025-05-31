@@ -77,4 +77,3 @@ function reference () {
 */
 exports.develop   = develop;
 exports.reference = reference;
-exports.minify_images = PRIVATE_TASKS.minify_images;

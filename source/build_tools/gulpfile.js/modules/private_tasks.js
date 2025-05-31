@@ -60,8 +60,6 @@ function clean(cb) {
             PATHS.javascript.uglified,
             PATHS.scss.transpiled,
             PATHS.scss.uglified,
-            PATHS.images.output + "**/*",  // Clean all optimized images
-            PATHS.images.signature_file,   // Clean TinyPNG signature file
         ],
         // allow deletion of files outside of the working directory
         { force: true },
