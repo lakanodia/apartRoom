@@ -297,7 +297,7 @@ header .navigation ul .li-name a.active {
 	height: 800px;
 	-o-object-fit: cover;
 	object-fit: cover;
-	background-image: url("../img/view.jpeg");
+	background-image: url("../img/views/view.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

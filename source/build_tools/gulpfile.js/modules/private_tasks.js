@@ -43,6 +43,7 @@ const nunjucks = require("gulp-nunjucks-render");
 const sass = require('gulp-sass')(require('sass'));
 // minify images
 const tinypng = require("gulp-tinypng-compress");
+const path = require('path');
 
 /*
     require paths object, containing all paths used.
@@ -59,6 +60,8 @@ function clean(cb) {
             PATHS.javascript.uglified,
             PATHS.scss.transpiled,
             PATHS.scss.uglified,
+            PATHS.images.output + "**/*",  // Clean all optimized images
+            PATHS.images.signature_file,   // Clean TinyPNG signature file
         ],
         // allow deletion of files outside of the working directory
         { force: true },
@@ -166,15 +169,28 @@ function minify_images (cb) {
     return src(PATHS.images.input)
         .pipe(tinypng({
             key: process.env.API_KEY_TINYPNG,
-            // suppress logging if gulp is run with --silent or -S flags
             log: !(process.argv.includes("--silent") || process.argv.includes("-S")),
             sigFile: PATHS.images.signature_file,
         }))
-        .pipe(dest(PATHS.images.output))
-        // callback to signal task completion
+        .pipe(dest(function(file) {
+            // Get just the filename without the directory structure
+            const filename = path.basename(file.path);
+            return PATHS.images.output;
+        }))
         .on("end", function () {
             cb();
         });
+}
+
+function clean_images(cb) {
+    del(
+        [
+            PATHS.images.output + "**/*",  // Clean all optimized images
+            PATHS.images.signature_file,   // Clean TinyPNG signature file
+        ],
+        { force: true },
+    ),
+    cb();
 }
 
 /*
@@ -186,4 +202,5 @@ exports.lint_javascript      = lint_javascript;
 exports.transpile_javascript = transpile_javascript;
 exports.transpile_scss       = transpile_scss;
 exports.lint_scss            = lint_scss;
+exports.clean_images         = clean_images;
 exports.minify_images        = minify_images;

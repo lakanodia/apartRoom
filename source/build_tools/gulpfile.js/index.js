@@ -30,3 +30,4 @@ exports.start = parallel(
 );
 
 exports.minify_images = PRIVATE_TASKS.minify_images;
+exports.clean_images = PRIVATE_TASKS.clean_images;
