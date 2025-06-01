@@ -13,10 +13,17 @@ module.exports = {
         watch: "../assets/js/**/*.js",
     },
     images: {
-        input: "../assets/images/**/*.{png,jpg,jpeg}",
+        input: "../assets/images/**/*.{png,jpg}",
         output: "../../docs/assets/img/",
         signature_file: "../assets/images/.tinypng-sigs",
-        watch: "../assets/images/**/*.{png,jpg,jpeg}",
+        watch: "../assets/images/**/*.{png,jpg}",
+        structure: {
+            rooms: "../assets/images/rooms/",
+            views: "../assets/images/views/",
+            amenities: "../assets/images/amenities/",
+            food: "../assets/images/food/",
+            icons: "../assets/images/icons/"
+        }
     },
     server: {
         root: "../../docs",
