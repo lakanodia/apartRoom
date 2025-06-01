@@ -77,12 +77,12 @@ The HTML structure of `source/templates/index.njk` is generally well-organized b
 
 ### Priority 2 - Semantic Improvements ✅ COMPLETED  
 1. Fix heading tag mismatch on line 113 (`<h1>` with `</h2>`) ✅ DONE
-2. Standardize sightseeing section class names to use consistent pattern
+2. Standardize sightseeing section class names to use consistent pattern ✅ DONE
 
-### Priority 3 - CSS Class Naming (Requires CSS Updates)
-1. Rename services-related classes to amenities-related for better semantics
-2. Simplify numbered class patterns in sightseeing section
-3. Use more semantic Bootstrap class names where appropriate
+### Priority 3 - CSS Class Naming (Requires CSS Updates) ✅ COMPLETED
+1. Rename services-related classes to amenities-related for better semantics ✅ DONE
+2. Simplify numbered class patterns in sightseeing section ✅ DONE  
+3. Use more semantic Bootstrap class names where appropriate ✅ DONE
 
 ## Implementation Impact
 
