@@ -1,7 +1,7 @@
-.backround-section {
+.background-section {
     margin-top: $size-small;
 
-    .backround-div {
+    .background-div {
       position: relative;
       padding: 50px;
       color: $color-white;
@@ -29,7 +29,7 @@
         z-index: 1;
       }
   
-      .backround-text {
+      .background-text {
         max-width: 400px;
         position: absolute;
         top: $percent-50;
@@ -48,7 +48,7 @@
           font-size: $size-small - 20px;
         }
         
-        .decsription {
+        .description {
           animation: drop-in 1200ms ease 500ms backwards;
           margin-top: $size-small;
           font-style: italic;

@@ -178,22 +178,22 @@ header .navigation ul {
 	display: flex;
 }
 
-header .navigation ul .li-name {
+header .navigation ul .nav-item {
 	margin-right: 30px;
 }
 
-header .navigation ul .li-name a {
+header .navigation ul .nav-item a {
 	text-decoration: none;
 	transition: all .3s;
 	color: #555;
 }
 
-header .navigation ul .li-name a:hover {
+header .navigation ul .nav-item a:hover {
 	color: #000;
 	text-shadow: 1px 1px 2px rgba(160,160,160,.586),0 0 1em rgba(252,143,0,.794),0 0 .2em #434343;
 }
 
-header .navigation ul .li-name a.active {
+header .navigation ul .nav-item a.active {
 	color: #000;
 	text-shadow: 1px 1px 2px rgba(160,160,160,.586),0 0 1em rgba(252,143,0,.794),0 0 .2em #434343;
 }
@@ -285,11 +285,11 @@ header .navigation ul .li-name a.active {
 	background-color: rgba(160,160,160,.586);
 }
 
-.backround-section {
+.background-section {
 	margin-top: 50px;
 }
 
-.backround-section .backround-div {
+.background-section .background-div {
 	position: relative;
 	padding: 50px;
 	color: #fefefe;
@@ -305,7 +305,7 @@ header .navigation ul .li-name a.active {
 	transition: .5s;
 }
 
-.backround-section .backround-div::before {
+.background-section .background-div::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -316,7 +316,7 @@ header .navigation ul .li-name a.active {
 	z-index: 1;
 }
 
-.backround-section .backround-div .backround-text {
+.background-section .background-div .background-text {
 	max-width: 400px;
 	position: absolute;
 	top: 50%;
@@ -326,23 +326,23 @@ header .navigation ul .li-name a.active {
 	z-index: 2;
 }
 
-.backround-section .backround-div .backround-text .title {
+.background-section .background-div .background-text .title {
 	animation: drop-in 1s ease 200ms backwards;
 	font-size: 50px;
 }
 
-.backround-section .backround-div .backround-text .title-city {
+.background-section .background-div .background-text .title-city {
 	animation: drop-in 1s ease 200ms backwards;
 	font-size: 30px;
 }
 
-.backround-section .backround-div .backround-text .decsription {
+.background-section .background-div .background-text .description {
 	animation: drop-in 1200ms ease 500ms backwards;
 	margin-top: 50px;
 	font-style: italic;
 }
 
-.backround-section .backround-div .backround-text .icon-arrow {
+.background-section .background-div .background-text .icon-arrow {
 	margin-top: 100px;
 	animation: drop-in 1500ms ease 700ms backwards,bounce 3s infinite;
 	font-size: 50px;
@@ -350,11 +350,11 @@ header .navigation ul .li-name a.active {
 	color: #fefefe;
 }
 
-.services-section {
+.amenities-section {
 	padding: 70px;
 }
 
-.services-section .services-title {
+.amenities-section .amenities-title {
 	font-size: 50px;
 	text-align: center;
 	text-shadow: 5px 20px rgba(215,215,215,.374);
@@ -363,7 +363,7 @@ header .navigation ul .li-name a.active {
 	margin-bottom: 19px;
 }
 
-.services-section .services-container {
+.amenities-section .amenities-container {
 	max-width: 1100px;
 	width: 100%;
 	display: flex;
@@ -373,7 +373,7 @@ header .navigation ul .li-name a.active {
 	margin: 0 auto;
 }
 
-.services-section .services-container .services-div {
+.amenities-section .amenities-container .amenity-card {
 	max-width: 350px;
 	width: 100%;
 	height: 300px;
@@ -385,22 +385,22 @@ header .navigation ul .li-name a.active {
 	transition: .3s;
 }
 
-.services-section .services-container .services-div:hover {
+.amenities-section .amenities-container .amenity-card:hover {
 	box-shadow: 2px 5px 35px rgba(160,160,160,.586);
 }
 
-.services-section .services-container .services-div .service-title {
+.amenities-section .amenities-container .amenity-card .amenity-title {
 	font-size: 22px;
 	font-weight: 600;
 }
 
-.services-section .services-container .services-div .service-text {
+.amenities-section .amenities-container .amenity-card .amenity-description {
 	font-size: 15px;
 	margin-top: 20px;
 	line-height: 28px;
 }
 
-.services-section .services-container .services-div .service-icon {
+.amenities-section .amenities-container .amenity-card .amenity-icon {
 	margin-bottom: 25px;
 	font-size: 25px;
 	color: rgba(252,143,0,.794);
@@ -494,13 +494,12 @@ header .navigation ul .li-name a.active {
 	grid-auto-rows: 300px;
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-1 {
-	grid-column: span 3;
+.sightseeing-section .attraction-card {
 	position: relative;
 	overflow: hidden;
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-1 .sightseeing-img-1 {
+.sightseeing-section .attraction-card .attraction-image {
 	width: 100%;
 	height: 100%;
 	-o-object-fit: cover;
@@ -509,11 +508,11 @@ header .navigation ul .li-name a.active {
 	transition: 1s;
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-1 .sightseeing-img-1:hover {
+.sightseeing-section .attraction-card .attraction-image:hover {
 	filter: grayscale(0%);
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-1 .text-overlay {
+.sightseeing-section .attraction-card .text-overlay {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -529,201 +528,24 @@ header .navigation ul .li-name a.active {
 	border-radius: 5px;
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-1:hover .text-overlay {
+.sightseeing-section .attraction-card:hover .text-overlay {
 	opacity: 1;
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-2 {
+.sightseeing-section .attraction-card--large {
+	grid-column: span 3;
+}
+
+.sightseeing-section .attraction-card--tall {
 	grid-row: span 2;
-	position: relative;
-	overflow: hidden;
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-2 .sightseeing-img-2 {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	filter: grayscale(70%);
-	transition: 1s;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-2 .sightseeing-img-2:hover {
-	filter: grayscale(0%);
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-2 .text-overlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity .5s;
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	background-color: rgba(0,0,0,.7);
-	padding: 10px 20px;
-	border-radius: 5px;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-2:hover .text-overlay {
-	opacity: 1;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-3 {
+.sightseeing-section .attraction-card--wide {
 	grid-column: span 2;
-	position: relative;
-	overflow: hidden;
 }
 
-.sightseeing-section .sightseeing-container .sightseeing-div-3 .sightseeing-img-3 {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	filter: grayscale(70%);
-	transition: 1s;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-3 .sightseeing-img-3:hover {
-	filter: grayscale(0%);
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-3 .text-overlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity .5s;
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	background-color: rgba(0,0,0,.7);
-	padding: 10px 20px;
-	border-radius: 5px;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-3:hover .text-overlay {
-	opacity: 1;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-4 {
-	position: relative;
-	overflow: hidden;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-4 .sightseeing-img-4 {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	filter: grayscale(70%);
-	transition: 1s;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-4 .sightseeing-img-4:hover {
-	filter: grayscale(0%);
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-4 .text-overlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity .5s;
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	background-color: rgba(0,0,0,.7);
-	padding: 10px 20px;
-	border-radius: 5px;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-4:hover .text-overlay {
-	opacity: 1;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-5 {
-	position: relative;
-	overflow: hidden;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-5 .sightseeing-img-5 {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	filter: grayscale(70%);
-	transition: 1s;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-5 .sightseeing-img-5:hover {
-	filter: grayscale(0%);
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-5 .text-overlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity .5s;
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	background-color: rgba(0,0,0,.7);
-	padding: 10px 20px;
-	border-radius: 5px;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-5:hover .text-overlay {
-	opacity: 1;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-6 {
+.sightseeing-section .attraction-card--bottom-large {
 	grid-column: span 3;
-	position: relative;
-	overflow: hidden;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-6 .sightseeing-img-6 {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	filter: grayscale(70%);
-	transition: 1s;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-6 .sightseeing-img-6:hover {
-	filter: grayscale(0%);
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-6 .text-overlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	transition: opacity .5s;
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	background-color: rgba(0,0,0,.7);
-	padding: 10px 20px;
-	border-radius: 5px;
-}
-
-.sightseeing-section .sightseeing-container .sightseeing-div-6:hover .text-overlay {
-	opacity: 1;
 }
 
 .feedback-section .feedback-title {
@@ -863,30 +685,30 @@ header .navigation ul .li-name a.active {
 	background-color: #d38832;
 }
 
-.contact-section .contact-form-main-div .conact-text-div {
+.contact-section .contact-form-main-div .contact-text-div {
 	padding: 20px;
 }
 
-.contact-section .contact-form-main-div .conact-text-div .conact-text {
+.contact-section .contact-form-main-div .contact-text-div .contact-text {
 	max-width: 350px;
 	width: 100%;
 }
 
-.contact-section .contact-form-main-div .conact-text-div .conact-text i {
+.contact-section .contact-form-main-div .contact-text-div .contact-text i {
 	font-size: 40px;
 	margin-bottom: 30px;
 	color: rgba(252,143,0,.794);
 }
 
-.contact-section .contact-form-main-div .conact-text-div .social-icon-main-div {
+.contact-section .contact-form-main-div .contact-text-div .social-icon-main-div {
 	display: flex;
 }
 
-.contact-section .contact-form-main-div .conact-text-div .social-icon-main-div a {
+.contact-section .contact-form-main-div .contact-text-div .social-icon-main-div a {
 	text-decoration: none;
 }
 
-.contact-section .contact-form-main-div .conact-text-div .social-icon-main-div a .social-icon-div {
+.contact-section .contact-form-main-div .contact-text-div .social-icon-main-div a .social-icon-div {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -1082,12 +904,12 @@ header .navigation {
 
 @media (width <= 870px) {
 
-.services-section .services-container {
+.amenities-section .amenities-container {
 	align-items: center;
 	justify-content: center;
 }
 
-.services-section .services-container .services-div {
+.amenities-section .amenities-container .amenity-card {
 	max-width: 450px;
 	width: 100%;
 }
@@ -1096,33 +918,33 @@ header .navigation {
 
 @media (width <= 560px) {
 
-.services-section .services-title {
+.amenities-section .amenities-title {
 	font-size: 30px;
 }
 
-.services-section .services-container {
+.amenities-section .amenities-container {
 	align-items: center;
 	justify-content: center;
 }
 
-.services-section .services-container .services-div {
+.amenities-section .amenities-container .amenity-card {
 	max-width: 450px;
 	width: 100%;
 	padding: 15px;
 }
 
-.services-section .services-container .services-div .service-title {
+.amenities-section .amenities-container .amenity-card .amenity-title {
 	font-size: 25px;
 	font-weight: 600;
 }
 
-.services-section .services-container .services-div .service-text {
+.amenities-section .amenities-container .amenity-card .amenity-description {
 	font-size: 15px;
 	margin-top: 15px;
 	line-height: 25px;
 }
 
-.services-section .services-container .services-div .service-icon {
+.amenities-section .amenities-container .amenity-card .amenity-icon {
 	margin-bottom: 25px;
 	font-size: 30px;
 	color: rgba(252,143,0,.794);
@@ -1202,11 +1024,11 @@ header .navigation {
 	text-align: center;
 }
 
-.contact-section .contact-form-main-div .conact-text-div {
+.contact-section .contact-form-main-div .contact-text-div {
 	text-align: center;
 }
 
-.contact-section .contact-form-main-div .conact-text-div .social-icon-main-div {
+.contact-section .contact-form-main-div .contact-text-div .social-icon-main-div {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1241,7 +1063,7 @@ header .navigation {
 	text-align: center;
 }
 
-.contact-section .contact-form-main-div .conact-text-div {
+.contact-section .contact-form-main-div .contact-text-div {
 	text-align: center;
 	transform: scale(0.9);
 }
