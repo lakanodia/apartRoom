@@ -1,8 +1,10 @@
+@use "variables.scss";
+
 .room-section {
     .room-title {
       text-align: center;
       margin-bottom: 10px;
-      padding: $size-medium;
+      padding: variables.$size-medium;
       font-size: 50px;
       font-weight: 900;
       text-shadow: 5px 20px rgb(198 198 198 / 37.4%);
@@ -10,7 +12,7 @@
   
     .room-main-div {
       .room-flex-div {
-        @include d-flex(flex, center, center);
+        @include variables.d-flex(flex, center, center);
       }
 
       .room-div {
@@ -27,7 +29,7 @@
         }
 
         .overlay {
-          color: $color-gray;
+          color: variables.$color-gray;
           position: absolute;
           inset: 0;
           height: 100%;
@@ -37,7 +39,7 @@
           background-color: #ffffff57;
 
           .text {
-            color: $color-black;
+            color: variables.$color-black;
             font-size: 20px;
             position: absolute;
             top: 50%;
@@ -47,7 +49,7 @@
           }
 
           .icons {
-            color: $color-black;
+            color: variables.$color-black;
             display: flex;
             justify-content: space-between;
 
@@ -85,7 +87,7 @@
   
     @media (width <= 580px) {
       .room-title  {
-        font-size: $size-small - 20px;
+        font-size: variables.$size-small - 20px;
       }
     }
   }

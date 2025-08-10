@@ -1,3 +1,4 @@
+@use "variables.scss";
 
 
 
@@ -5,15 +6,15 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: $percent-100;
-    background-color: $color-white;
+    width: variables.$percent-100;
+    background-color: variables.$color-white;
 
-    @include d-flex(flex, space-between, center);
+    @include variables.d-flex(flex, space-between, center);
 
     z-index: 100;
   
     .nav-div-left {
-      @include d-flex(flex, space-between, center);
+      @include variables.d-flex(flex, space-between, center);
 
       background-color: rgb(255 183 0);
       padding: 10px 20px;
@@ -38,7 +39,7 @@ header {
         margin: 0;
         padding: 0;
 
-        @include d-flex(flex);
+        @include variables.d-flex(flex);
 
         .nav-item {
           margin-right: 30px;
@@ -49,15 +50,15 @@ header {
             color: #555;
 
             &:hover {
-              color: $color-black;
-              text-shadow: 1px 1px 2px $color-gray, 0 0 1em $color-yellow,
-                0 0 0.2em $primary-color;
+              color: variables.$color-black;
+              text-shadow: 1px 1px 2px variables.$color-gray, 0 0 1em variables.$color-yellow,
+                0 0 0.2em variables.$primary-color;
             }
 
             &.active {
-              color: $color-black;
-              text-shadow: 1px 1px 2px $color-gray, 0 0 1em $color-yellow,
-                0 0 0.2em $primary-color;
+              color: variables.$color-black;
+              text-shadow: 1px 1px 2px variables.$color-gray, 0 0 1em variables.$color-yellow,
+                0 0 0.2em variables.$primary-color;
             }
           }
         }

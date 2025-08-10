@@ -1,10 +1,12 @@
+@use "variables.scss";
+
 .background-section {
-    margin-top: $size-small;
+    margin-top: variables.$size-small;
 
     .background-div {
       position: relative;
       padding: 50px;
-      color: $color-white;
+      color: variables.$color-white;
       text-align: center;
       height: 800px;
       object-fit: cover;
@@ -23,8 +25,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: $percent-100;
-        height: $percent-100;
+        width: variables.$percent-100;
+        height: variables.$percent-100;
         background-color: rgb(0 0 0 / 30.8%);
         z-index: 1;
       }
@@ -32,34 +34,34 @@
       .background-text {
         max-width: 400px;
         position: absolute;
-        top: $percent-50;
-        left: $percent-50;
-        transform: translate(-$percent-50, -$percent-50);
-        width: $percent-100;
+        top: variables.$percent-50;
+        left: variables.$percent-50;
+        transform: translate(-(variables.$percent-50), -(variables.$percent-50));
+        width: variables.$percent-100;
         z-index: 2;
 
         .title {
           animation: drop-in 1s ease 200ms backwards;
-          font-size: $size-small;
+          font-size: variables.$size-small;
         }
 
         .title-city {
           animation: drop-in 1s ease 200ms backwards;
-          font-size: $size-small - 20px;
+          font-size: variables.$size-small - 20px;
         }
         
         .description {
           animation: drop-in 1200ms ease 500ms backwards;
-          margin-top: $size-small;
+          margin-top: variables.$size-small;
           font-style: italic;
         }
 
         .icon-arrow {
-          margin-top: $size-medium;
+          margin-top: variables.$size-medium;
           animation: drop-in 1500ms ease 700ms backwards, bounce 3s infinite;
-          font-size: $size-small;
+          font-size: variables.$size-small;
           cursor: pointer;
-          color: $color-white;
+          color: variables.$color-white;
         }
       }
     }

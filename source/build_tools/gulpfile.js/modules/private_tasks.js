@@ -144,7 +144,7 @@ function lint_scss(cb) {
 function transpile_scss(cb) {
     return src(PATHS.scss.input)
         .pipe(sourcemaps.init())        
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'compressed', silenceDeprecations: ['legacy-js-api'] }).on('error', sass.logError))
         .pipe(css_import())
         .pipe(autoprefix())
         .pipe(combine_media_queries())
