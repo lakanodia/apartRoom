@@ -1,18 +1,18 @@
-@import "reset.scss";
-@import "variables.scss";
+@use "reset.scss";
+@use "variables.scss";
 
 /* global */
-@import "./global/global_header.scss";
-@import "./global/global_footer.scss";
+@use "global/global_header.scss";
+@use "global/global_footer.scss";
 
 /* page  */
-@import "./pages/welcome_page.scss";
-@import "./pages/appliances_page.scss";
-@import "./pages/room_page.scss";
-@import "./pages/sightseeing_page.scss";
-@import "./pages/feedback_page.scss";
-@import "./pages/book_page.scss";
-@import "./pages/map_page.scss";
+@use "pages/welcome_page.scss";
+@use "pages/appliances_page.scss";
+@use "pages/room_page.scss";
+@use "pages/sightseeing_page.scss";
+@use "pages/feedback_page.scss";
+@use "pages/book_page.scss";
+@use "pages/map_page.scss";
 
 /* Remaining */
-@import "style.scss";
+@use "style.scss";

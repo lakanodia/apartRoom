@@ -1,54 +1,56 @@
+@use "variables.scss";
+
 .amenities-section {
     padding: 70px;
 
     .amenities-title {
-      font-size: $size-small;
+      font-size: variables.$size-small;
       text-align: center;
       text-shadow: 5px 20px rgb(215 215 215 / 37.4%);
       font-weight: 900;
-      margin-top: $size-small - 30px;
-      margin-bottom: $size-small - 31px;
+      margin-top: variables.$size-small - 30px;
+      margin-bottom: variables.$size-small - 31px;
     }
 
     .amenities-container {
       max-width: 1100px;
       width: 100%;
 
-      @include d-flex(flex, space-between, center);
+      @include variables.d-flex(flex, space-between, center);
 
       flex-wrap: wrap;
       margin: 0 auto;
 
       .amenity-card {
         max-width: 350px;
-        width: $percent-100;
+        width: variables.$percent-100;
         height: 300px;
-        border: 1px solid $color-gray;
+        border: 1px solid variables.$color-gray;
         border-radius: 5px;
-        padding: $size-small - 5px;
-        margin-top: $size-small - 20px;
+        padding: variables.$size-small - 5px;
+        margin-top: variables.$size-small - 20px;
         box-sizing: border-box;
         transition: 0.3s;
 
         &:hover {
-          box-shadow: 2px 5px 35px $color-gray;
+          box-shadow: 2px 5px 35px variables.$color-gray;
         }
 
         .amenity-title {
-          font-size: $size-small - 28px;
+          font-size: variables.$size-small - 28px;
           font-weight: 600;
         }
 
         .amenity-description {
-          font-size: $size-small - 35px;
-          margin-top: $size-small - 30px;
-          line-height: $size-small - 22px;
+          font-size: variables.$size-small - 35px;
+          margin-top: variables.$size-small - 30px;
+          line-height: variables.$size-small - 22px;
         }
 
         .amenity-icon {
-          margin-bottom: $size-small - 25px;
-          font-size: $size-small - 25px;
-          color: $color-yellow;
+          margin-bottom: variables.$size-small - 25px;
+          font-size: variables.$size-small - 25px;
+          color: variables.$color-yellow;
         }
       }
     }
@@ -67,7 +69,7 @@
   
     @media (width <= 560px) {
       .amenities-title {
-        font-size: $size-small - 20px;
+        font-size: variables.$size-small - 20px;
       }
 
       .amenities-container {
@@ -80,20 +82,20 @@
           padding: 15px;
 
           .amenity-title {
-            font-size: $size-small - 25px;
+            font-size: variables.$size-small - 25px;
             font-weight: 600;
           }
 
           .amenity-description {
-            font-size: $size-small - 35px;
-            margin-top: $size-small - 35px;
-            line-height: $size-small - 25px;
+            font-size: variables.$size-small - 35px;
+            margin-top: variables.$size-small - 35px;
+            line-height: variables.$size-small - 25px;
           }
 
           .amenity-icon {
-            margin-bottom: $size-small - 25px;
-            font-size: $size-small - 20px;
-            color: $color-yellow;
+            margin-bottom: variables.$size-small - 25px;
+            font-size: variables.$size-small - 20px;
+            color: variables.$color-yellow;
           }
         }
       }
